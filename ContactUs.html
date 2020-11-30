@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact US</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="js/linkactive.js"></script>
+    <script src="js/contactus.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh7SCCERwuSKJRDEMT7VPxVDRGGJC7SWw&callback=initMap">
+          </script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contactus.css">
+    
+</head>
+<body>
+    <div class="header clearfix">
+        <div class="company clearfix">
+             <p class="logo">Magic Masala</p>
+             <p class="tagline">The Real Taste of india</p>
+        </div>
+         <nav id="navbar">
+             <ul class="navigation">
+                 <li><a href="index.html" class="link" onclick="myfunction(this)">Home</a></li>
+                 <li><a href="aboutus.html" onclick="myfunction(this)" class="link" >About us</a></li>
+                 <li><a href="product.html" onclick="myfunction(this)" class="link">Products</a></li>
+                 <li><a href="buynow.html" onclick="myfunction(this)" class="link">Buy Now</a></li>
+                 <li><a href="ContactUs.html" onclick="myfunction(this)" class="active link">Contact</a></li>
+                 <li><a href="login.html" onclick="myfunction(this)" class="link">Login</a></li>
+                 <li><a href="signup.html" onclick="myfunction(this)" class="link">Sign up</a></li>
+             </ul>
+         </nav>
+         <a href="javascript:void(0);" class="icon" 
+         onclick="funone()">
+             <i class="fa fa-bars"></i></a>
+    </div>
+
+    <div class="space"></div>
+
+    <div class="aside clearfix">
+        <Address>
+          <div class="adress">
+              <h4>Address:</h4>
+              Satyam Furniture <br>
+              Kunda, Amer, <br>
+              Jaipur - 302028,<br>
+              Rajasthan.  <br>
+          </div>
+            <div class="customer-call">
+                <h4>Customer Care Number: </h4>
+                098290 14384
+                <h4>Customer Care Email:</h4>
+                Satyamfurniture@gmail.com
+            </div>
+        </Address>
+    </div>
+
+    <div class="main clearfix">
+        <div id="map"></div>
+
+        <div class="container">
+            <form action="#">
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">First Name :</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Last Name :</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+            <div class="row">
+                    <div class="col-25">
+                      <label for="phone">Phone :</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="phone" name="phone" placeholder="Phone Number..">
+                    </div>
+                  </div>
+                  <div class="row">
+                        <div class="col-25">
+                          <label for="email">Email :</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="email" name="email" placeholder="Email..">
+                        </div>
+                      </div>
+            <div class="row">
+                <div class="col-25">
+                  <label for="state">State :</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="state" name="state" placeholder="State..">
+                </div>
+                </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="country">Country :</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="country" name="country" placeholder="Country..">
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                  <label for="enquery">Type of Enquery :</label>
+                </div>
+                <div class="col-75">
+                    <div class="one">
+                            <input type="radio" name="enquery" id="Customer-enquery" value="Customer Enquery">
+                            <label for="enquery1">Customer Enquery</label>
+                    </div>
+                   <div class="two">
+                        <input type="radio" name="enquery" id="Trade-enquery" value="Trade Enquery">
+                        <label for="enquery2">Trade Enquery</label>
+                   </div>
+                    <div class="three">
+                            <input type="radio" name="enquery" id="Other-enquery" value="Other Enquery">
+                            <label for="enquery3">Other</label>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Detail :</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Enquery Detail.." style="height:200px"></textarea>
+              </div>
+            </div>
+           
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+            </form>
+          </div>
+    </div>
+
+    <div class="footer">
+            <nav>
+                <ul class="navigation-footer">
+                    <li><a href="index.html"><span class="fas fa-caret-right"></span> Home </a></li>
+                    <li><a href="aboutus.html"> <span class="fas fa-caret-right"></span>About us</a></li>
+                    <li><a href="product.html"> <span class="fas fa-caret-right"></span>Products</a></li>
+                </ul>
+                <ul class="navigation-footer">
+                    <li><a href="product.html"><span class="fas fa-caret-right"></span>Buy Now</a> </li>
+                    <li><a href="ContactUs.html"><span class="fas fa-caret-right"></span>Contact</a></li>
+                </ul>
+            </nav>
+        
+            <div class="social">
+                <h1>Join Us On Social Media <span class="	fas fa-arrow-circle-down"></span></h1>
+                <div class="social-handle clearfix">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+       
+</body>
+</html>

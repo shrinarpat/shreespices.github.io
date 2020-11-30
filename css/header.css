@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0px;
+     }
+
+     html {
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	body {
+		height:100vh;
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+    body {
+    font-family: sans-serif;
+    font-size: 16px;
+     }
+     .header {
+         width: 100vw;
+         overflow: hidden;
+     }
+     .navbar {
+         display: block;
+     }
+     .company {
+         float: left;
+         /* width: 40vw; */
+         padding: 10px;
+         padding-top: 1.5%;
+         padding-left: 5%;
+         overflow: auto;
+         line-height: 2em;
+              }
+     .logo {
+         font-size: 2em;
+         color: red;
+         margin-bottom: 5px;
+         padding: 0px;
+         margin: 0px;
+     }
+     .tagline {
+       font-style: italic;
+       color: rgb(235, 183, 13);
+       margin-top: 0;
+       padding-top: 0;
+       padding: 0px;
+       margin: 0px;
+     }
+     .header nav {
+         float: right;
+         padding-top: 2%;
+         display: block;
+         margin-left: 2vw;
+         margin-right: 3vw;
+     }
+     .header nav ul {
+         list-style-type: none;
+     }
+     .navigation li {
+         float: left;
+     }
+     .navigation li a {
+         text-decoration: none;
+         font-size: 1.4vw;
+         color: black;
+         margin-right: 7px;
+         display: inline-block;
+         text-align: center;
+         padding: 14px 16px;
+     }
+       .navigation li a:hover {
+         background-color: red;
+         color: white;
+         box-shadow: 2px 2px 2px 3px grey;
+         border-radius: 3px;
+     }
+       .navigation a.active {
+         background-color: red;
+         color: #f2f2f2;
+         border-radius: 3px;
+         box-shadow: 2px 2px 2px 3px grey;
+     }
+     .clearfix::after {
+         content: "";
+         display: table;
+         clear: both;
+     }
+     .icon {
+         display: none;
+     }
+    
+
+     @media screen and (max-width : 850px) {
+        .header {
+            font-weight: 400;
+            width: 100vw;
+            position: relative;
+            margin-bottom:2%; 
+            margin-right: 20vw;
+        }
+              
+       .header nav {
+            width: 100vw;
+            background-color: #485460;
+            display: none;
+            box-shadow: 0px 0px 6px 5px gainsboro;
+            z-index: 1;
+            padding: 3%;
+        }
+       .navbar .navigation {
+            font-size: 20px;
+            line-height: 1.50em;
+            color:#ffffff;
+            width: 100%;
+        }
+        .navigation li {
+             float: left;
+             width: 40%;
+             text-align: center;
+         }
+         .navigation li a {
+             width: 70%;
+             padding: 2%;
+             font-size: 1.2em;
+             color: white;
+             margin: 2%;
+         }
+         .navigation li a:hover {
+            background-color: ;
+            color: white;
+            box-shadow: 2px 1px 2px 3px #dfe6e9;
+            border-radius: 5px;
+         }
+         .navigation a.active {
+            background-color: red;
+            color: #f2f2f2;
+            border-radius: 5px;
+            box-shadow: 2px 1px 2px 3px #dfe6e9;
+        }
+        
+         .icon {
+             display: block;
+             color: orangered;
+             width: 20vw;
+             padding: 1.5%;
+             position: absolute;
+             top: 0%;
+             right: 5%;
+             margin-top: 1%;
+         }
+        
+         .company {
+             width: 80vw;
+         }
+          
+     }
+     @media screen and (min-width : 850px) {
+         #navbar {
+             display: block;
+         }
+     }

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>index.html</title>
+    <link rel="stylesheet" type="text/css" href="css/header.css
+    ">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="js/linkactive.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body onload="setfunction()" onresize="addClassFun()">
+   <div class="header clearfix">
+       <div class="company clearfix">
+            <p class="logo">Magic Masala</p>
+            <p class="tagline">The Real Taste of india</p>
+       </div>
+        <nav id="navbar">
+            <ul class="navigation clearfix">
+                      <li><a href="index.html" class="active link odd" onclick="myfunction(this)">Home</a></li>
+                         <li><a href="aboutus.html" onclick="myfunction(this)" class="link odd" > About us</a></li>
+                         <li><a href="product.html" onclick="myfunction(this)" class="link odd"> Products</a></li>
+                         <li><a href="buynow.html" onclick="myfunction(this)" class="link even"> Buy Now</a></li>
+                         <li><a href="ContactUs.html" onclick="myfunction(this)" class="link extra odd"> Contact</a></li>
+                         <li><a href="login.html" onclick="myfunction(this)" class="link extra even" id="login1"> </i>Login</a></li>
+                         <li><a href="signup.html" onclick="myfunction(this)" class="link extra even" id="signup1"> Sign up</a></li>
+            </ul>
+
+                </nav>
+        <a href="javascript:void(0);" class="icon" 
+        onclick="funone()">
+            <i class="fa fa-bars"></i></a>
+
+   </div>
+
+   <div class="slide-container">
+        <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="media/photo1.jpg" style="width:100%">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="media/photo2.jpg" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 5</div>
+                  <img src="media/photo3.jpg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+                
+                <div class="mySlides fade">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="media/photo3.jpg" style="width:100%">
+                        <div class="text">Caption Four</div>
+                      </div>
+                
+                      <div class="mySlides fade">
+                            <div class="numbertext">5 / 5</div>
+                            <img src="media/photo5.jpg" style="width:100%">
+                            <div class="text">Caption Five</div>
+                          </div>
+                
+                </div>
+   </div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<div class="about">
+    <h1> About <span class="special">Magic Masala</span> </h1>
+    <p>What is Lorem Ipsum?
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <a href="aboutus.html" class="view">View More</a>
+</div>
+
+<div class="products">
+  <h1>Our <span class="special">Products</span></h1>
+  <div class="product-list">
+    <i class="fas fa-chevron-left first" onclick="changeProductback()"></i>
+    <img src="media/pack-0.png" alt="Chhole masala" class="pack">
+    <img src="media/pack-1.png" alt="Chhole masala" class="pack">
+    <img src="media/pack-2.png" alt="Royal masala" class="pack img3">
+    <img src="media/pack-3.png" alt="sbji masala" class="pack img4 img3">
+    <img src="media/pack-4.png" alt="sambhar masala" class="pack img4 img3">
+    <i class="fas fa-chevron-right" onclick="changeProduct()"></i>
+  </div>
+
+</div>
+
+<div class="footer clearfix">
+    <nav>
+        <ul class="navigation-footer nav-footer-one">
+            <li><a href="index.html"><span class="fas fa-caret-right"></span> Home</a></li>
+            <li><a href="aboutus.html"> <span class="fas fa-caret-right"></span>About us</a></li>
+            <li><a href="product.html"> <span class="fas fa-caret-right"></span>Products</a></li>
+        </ul>
+        <ul class="navigation-footer nav-footer-two">
+            <li><a href="buynow.html"><span class="fas fa-caret-right"></span>Buy Now</a> </li>
+            <li><a href="ContactUs.html"><span class="fas fa-caret-right"></span>Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="social">
+        <h1>Join Us On Social Media <span class="	fas fa-arrow-circle-down"></span></h1>
+        <div class="social-handle clearfix">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </div> 
+</div>
+<script src="js/index.js"></script>
+<p id="demo"></p>
+</body>
+</html>
