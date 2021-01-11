@@ -6,16 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Buy Now</title>
 
-	<meta name="generator" content="comingsoonpage.com 1.0.0" />
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="js/linkactive.js"></script>
 	
 	
 	<link rel="stylesheet" href="css/header.css">
 	
-	<!-- Calculated Styles -->
-	<style type="text/css">
+	
 	
 	html {
 		height: 100%;
@@ -37,42 +32,22 @@
 		background-color: #E71C23;
 	}
 	
-	html{
-		height:100%;
-		/*background: #ffffff url(https://images.unsplash.com/photo-1449168013943-3a15804bb41c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=1958d4bfb59a246c6092ff0daabd284b) no-repeat center bottom fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;*/
-	}
+
 
 	
 </head>
 <body>
-
-	
-		<div class="header clearfix">
-				<div class="company clearfix">
-					 <p class="logo">Magic Masala</p>
-					 <p class="tagline">The Real Taste of india</p>
-				</div>
-				 <nav id="navbar">
-					 <ul class="navigation">
-						 <li><a href="index.html" class="link" onclick="myfunction(this)">Home</a></li>
-						 <li><a href="aboutus.html" onclick="myfunction(this)" class="link" >About us</a></li>
-						 <li><a href="product.html" onclick="myfunction(this)" class="link">Products</a></li>
-						 <li><a href="buynow.html" onclick="myfunction(this)" class="link active">Buy Now</a></li>
-						 <li><a href="ContactUs.html" onclick="myfunction(this)" class=" link">Contact</a></li>
-						 <li><a href="login.html" onclick="myfunction(this)" class="link">Login</a></li>
-						 <li><a href="signup.html" onclick="myfunction(this)" class="link">Sign up</a></li>
-					 </ul>
-				 </nav>
-				 <a href="javascript:void(0);" class="icon" 
-				 onclick="funone()">
-					 <i class="fa fa-bars"></i></a>
-			</div>
 		
-			<div class="space"></div>
+<div id="like_button_container"></div>
+	
+	
+	  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="like_button.js"></script>
        
 </body>
 </html>
