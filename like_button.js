@@ -2,7 +2,7 @@ use strict;
 
 const e = react.createElement;
 
-class Liked extends React.Component {
+class LikeButton extends React.Component {
 constructor(props){
 super(props);
 this.state = { liked:false};
@@ -22,3 +22,6 @@ this.setState( {liked:true} )
 );
 }
 }
+
+const domContianer = document.querySelector('#like_button_continer');
+ReactDOM.render(e(LikeButton),domContianer);
